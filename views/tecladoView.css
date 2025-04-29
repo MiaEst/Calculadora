@@ -1,3 +1,23 @@
 .teclado {
+   display: grid;
+   padding: 1rem;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(5,9rem);
+   
+}
+.teclas {
+    font-size: 3rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.teclas:hover{
     background-color: cadetblue;
+}
+.tecla-0 {
+    grid-column: 1/3;
 }
